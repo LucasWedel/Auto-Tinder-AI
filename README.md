@@ -3,9 +3,9 @@ Auto Tinder. Tired of swiping with your thumb? Made this program to automaticall
 
 Funny project trying to learn python and machine learning B-)
 
--------------
-Simple setup. 
 
+Simple setup. 
+-------------
 Collect your data by scraping using UrlScraper.py.
 
 Save the data using UrlsToJpg.py
@@ -17,8 +17,8 @@ Sort the data as preferences using ImageSorter.py
 Train your own model using cnnModel.py
 
 Let it auto swipe using your preferences with Main.py
--------------
 
+-------------
 Can currently accurately guess 82,11% images/profiles correctly.
 
 Accuracy Improvements Timeline:
