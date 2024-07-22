@@ -1,4 +1,7 @@
-Auto Tinder. Tired of swiping with your thumb? Made this program to automatically swipe on tinder based on your own preferences. Machine learning using cnn to learn your preferences and guesses if you would find a person attractive.
+Auto Tinder. 
+-------------
+
+Tired of swiping with your thumb? Made this program to automatically swipe on tinder based on your own preferences. Machine learning using cnn to learn your preferences and guesses if you would find a person attractive.
 
 
 Funny project trying to learn python and machine learning B-)
