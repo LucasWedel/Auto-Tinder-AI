@@ -1,6 +1,8 @@
 Auto Tinder. Tired of swiping with your thumb? Made this program to automatically swipe on tinder based on your own preferences. Machine learning using cnn to learn your preferences and guesses if you would find a person attractive.
 
+
 Funny project trying to learn python and machine learning B-)
+
 
 Simple setup. 
 
@@ -15,6 +17,7 @@ Sort the data as preferences using ImageSorter.py
 Train your own model using cnnModel.py
 
 Let it auto swipe using your preferences with Main.py
+
 
 Can currently accurately guess 82,11% images/profiles correctly.
 
