@@ -11,11 +11,11 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.vgg16 import preprocess_input
 import numpy as np
 
-# Environment variables
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-# Paths
+# Edit your folder path
 folder_path = r'F:\Tinder Storage\Predicting'
 if not os.path.exists(folder_path):
     os.makedirs(folder_path)
@@ -23,8 +23,6 @@ if not os.path.exists(folder_path):
 model_path = r'C:\Users\lucas\OneDrive\Documents\UNI Software\Tinders\saved_model_h5.h5'
 images_folder = r'F:\Tinder Storage\Predicting'
 old_urls_file = 'old_urls.txt'
-
-# Import statements and initial setup...
 
 def space_search_and_scrape(driver):
     body = driver.find_element(By.TAG_NAME, 'body')
