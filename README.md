@@ -1,4 +1,4 @@
-Auto Tinder. 
+Auto Tinder AI. 
 -------------
 ![Untitled video - Made with Clipchamp (2)](https://github.com/user-attachments/assets/02fe40f0-7477-46a2-ac2b-902036e44b32)
 
