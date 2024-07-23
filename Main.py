@@ -96,7 +96,7 @@ def predict_images(model_path, images_folder):
 
     return results
 
-# Initialize WebDriver
+# Put your chromedriver path
 PATH = r"C:\Users\lucas\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
 opts = webdriver.ChromeOptions()
 opts.add_argument("--user-data-dir=C:\\Users\\lucas\\AppData\\Local\\Google\\Chrome\\User Data\\Default")
@@ -106,7 +106,6 @@ driver.get("https://tinder.com/app/recs")
 print('Sleeping for 30 seconds first time launching')
 time.sleep(random.uniform(30, 35))
 
-# Load previously saved URLs
 if os.path.exists(old_urls_file):
     with open(old_urls_file, 'r') as file:
         old_urls = set(line.strip() for line in file)
@@ -160,11 +159,9 @@ while True:
         base_urls = [url.split('?')[0] for url in scraped_urls[1:]]
         unique_base_urls.update(base_urls)
         unique_original_urls.update(scraped_urls[1:])
-    
-    # Remove URLs that are in old_urls
+
     new_unique_original_urls = unique_original_urls - old_urls
     
-    # Download new images
     urltojpgimagecounter = 1
     for url in new_unique_original_urls:
         response = requests.get(url)
@@ -183,7 +180,6 @@ while True:
 
     print("Unique URLs:", separator.join(unique_urls))
 
-    # Update base URLs in file
     with open('urls.txt', 'r') as f:
         existing_base_urls = set(line.split('?')[0].strip() for line in f)
     unique_base_urls -= existing_base_urls
@@ -197,12 +193,10 @@ while True:
         with open('urls.txt', 'a') as f:
             f.write(url_string)
 
-    # Update the old URLs with the current unique_original_urls
     old_urls.update(unique_original_urls)
     with open(old_urls_file, 'w') as file:
         file.write("\n".join(old_urls))
 
-    # Clean up images
     folder_path = r'F:\Tinder Storage\Predicting'
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
