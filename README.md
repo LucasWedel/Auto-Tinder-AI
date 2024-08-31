@@ -1,6 +1,6 @@
 Auto Tinder AI. 
 -------------
-![Uploading Untitledvideo-MadewithClipchamp2-ezgif.com-video-to-gif-converter.gif…]()
+![Untitledvideo-MadewithClipchamp2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/6a87500d-abe9-467d-b9c8-958a638cc610)
 
 Tired of swiping with your thumb? Made this program to automatically swipe on tinder based on your own preferences. Machine learning using cnn to learn your preferences and guesses if you would find a person attractive.
 
